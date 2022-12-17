@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffde22;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  min-height: 60vh;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  width: 90%;
+}
+
+.nav {
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items {
+  width: 40%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.section-todo {
+  margin-top: -18rem;
+  text-align: center;
+}
+
+.form-todo {
+  min-height: 5vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.form-todo input {
+  min-height: 100%;
+}
+.form-todo input[type="text"] {
+  width: 78%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form-todo input[type="submit"] {
+  width: 20%;
+  background: #ff8928;
+  color: white;
+  font-weight: bold;
+}
+.todo-list {
+  text-align: left;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+.todo-list li {
+  padding: 0.7rem;
+  background: #ff414e;
+  color: white;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-btn {
+  min-height: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #ff8928;
+  color: #fff;
+  border: none;
+}
+.section-signup {
+  margin: 5rem auto;
+  text-align: center;
+  background: rgb(240, 240, 240);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.signup-form {
+  max-width: 800px;
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}
+.signup-form label {
+  display: block;
+}
+
+.signup-form input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.form-group {
+  margin-top: 1rem;
+}
+.signup-form textarea {
+  width: 100%;
+}
+.signup-btn {
+  background: #ff8928;
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+/*=== media query =====*/
+
+
+@media (max-width:360px){
+  .nav{
+    font-size: 15px;
+  }
+  
+  .nav-items{
+    font-size: 12px;
+  }
+
+  .btn{
+    font-size: 11px;
+  }
+}
+
+@media (max-width:415px){
+  .nav-items{
+    font-size: 10px;
+  }
+}
+
+
+
+@media (max-width:576px){
+  
+  .todo-list span {
+    font-size: .8rem;
+  }
+
+  .todo-btn {
+    padding: .2rem;
+  }
+}
+
